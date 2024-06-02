@@ -8,8 +8,9 @@ import "swiper/css/navigation";
 import {Pagination} from "swiper/modules";
 import "swiper/css/virtual";
 import {Virtual} from "swiper/modules";
+import { Link } from "react-router-dom";
 
-const Tab1 = (props) => {
+const MostDisCounted = (props) => {
   const {grpData, itmData, rateData} = props;
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -66,6 +67,8 @@ const Tab1 = (props) => {
                   .filter((item) => item.item_group === grp.name)
                   .map((itm, index) => (
                     <SwiperSlide key={index} virtualIndex={index} className="md:ml-0 ml-4">
+                     
+                     <Link to='/product'>
                       <div className="card w-72 bg-white shadow-xl my-5 hover:-translate-y-2 duration-200 h-[500px] ">
                         <figure>
                           <img src={`https://erp.icfix.com.bd${itm?.thumbnail}`} className="h-80 w-full" />
@@ -84,6 +87,7 @@ const Tab1 = (props) => {
                           </div>
                         </div>
                       </div>
+                      </Link>
                     </SwiperSlide>
                   ))}
               </Swiper>
@@ -108,6 +112,9 @@ const Tab1 = (props) => {
                   .filter((item) => item.item_group === grp.name)
                   .map((itm, index) => (
                     <SwiperSlide key={index} virtualIndex={index} className="md:ml-0 ml-4">
+                     
+                     <Link to='/product'>
+
                       <div className="card w-72 bg-white shadow-xl my-5 hover:-translate-y-2 duration-200 h-[500px]">
                         <figure>
                           <img src={`https://erp.icfix.com.bd${itm?.thumbnail}`} className="h-80 w-full" />
@@ -126,6 +133,7 @@ const Tab1 = (props) => {
                           </div>
                         </div>
                       </div>
+                      </Link>
                     </SwiperSlide>
                   ))}
               </Swiper>
@@ -157,6 +165,8 @@ const Tab1 = (props) => {
                   .filter((item) => item.item_group === grp.name)
                   .map((itm, index) => (
                     <SwiperSlide key={index} virtualIndex={index} className="md:ml-0 ml-4">
+
+                     <Link to='/product'>
                       <div className="card w-72 bg-white shadow-xl my-5 hover:-translate-y-2 duration-200 h-[500px]">
                         <figure>
                           <img src={`https://erp.icfix.com.bd${itm?.thumbnail}`} className="h-80 w-full" />
@@ -175,6 +185,7 @@ const Tab1 = (props) => {
                           </div>
                         </div>
                       </div>
+                      </Link>
                     </SwiperSlide>
                   ))}
               </Swiper>
@@ -208,6 +219,8 @@ const Tab1 = (props) => {
                   .filter((item) => item.item_group === grp.name)
                   .map((itm, index) => (
                     <SwiperSlide key={index} virtualIndex={index} className="md:ml-0 ml-4">
+                     
+                     <Link to='/product'>
                       <div className="card w-72 bg-white shadow-xl my-5 hover:-translate-y-2 duration-200 h-[500px]">
                         <figure>
                           <img src={`https://erp.icfix.com.bd${itm?.thumbnail}`} className="h-80 w-full" />
@@ -226,6 +239,7 @@ const Tab1 = (props) => {
                           </div>
                         </div>
                       </div>
+                      </Link>
                     </SwiperSlide>
                   ))}
               </Swiper>
@@ -238,4 +252,4 @@ const Tab1 = (props) => {
   );
 };
 
-export default Tab1;
+export default MostDisCounted;

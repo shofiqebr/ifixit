@@ -11,6 +11,7 @@ import ProfessionalRepair from "./files/ProfessionalRepair";
 import Tab1 from "./files/Tab1";
 import VedioPart from "./files/VedioPart";
 import WhycChoose from "./files/WhycChoose";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const grpData = useContext(GroupsContext);
@@ -19,6 +20,13 @@ const Home = () => {
 
   return (
     <div>
+
+      <Helmet>
+        <title>Ifixit | Home</title>
+        <link rel="canonical" href="https://i.ibb.co/GQcCJRP/logo.png" />
+      </Helmet>
+
+
       <HeroBanner />
       <Card grpData={grpData} />
       <Fixit />

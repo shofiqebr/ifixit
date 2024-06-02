@@ -10,7 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 const HeroBanner = () => {
   return (
     <div
-      className="h-[600px] banner-bg my-2 bg-cover md:bg-center bg-fixed flex justify-center items-center md:flex-row flex-col-reverse"
+      className="h-[600px] banner-bg my-2 bg-cover md:bg-center bg-fixed flex justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-3"
       style={{backgroundImage: `url(${bannerImage})`}} >
       <div className="w-1/2 flex flex-col md:ml-12">
         <p className="text-2xl font-medium">PROFESSIONAL</p>

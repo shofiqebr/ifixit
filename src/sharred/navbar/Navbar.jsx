@@ -1,12 +1,13 @@
 import {FaChevronDown} from "react-icons/fa";
 import logoImage from "../../assets/logo.png";
 import {FaCartShopping} from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <a className="navbar-btn-style">HOME</a>
+        <Link to='/'><a className="navbar-btn-style">HOME</a></Link>
         <div className="hover-effect transition duration-300 ease-in-out w-[0%] bg-transparent py-[2px] "></div>
       </li>
       <li className="group relative">
@@ -126,7 +127,7 @@ const Navbar = () => {
         </ul>
       </li>
       <li>
-        <a className="navbar-btn-style">BLOG</a>
+       <Link to='allCategory'> <a className="navbar-btn-style">ALL CATEGORY</a></Link>
         <div className="hover-effect transition duration-300 ease-in-out w-[0%] bg-transparent py-[2px] "></div>
       </li>
       <li>
@@ -158,9 +159,11 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
+        <Link to='/'>
         <a className="">
           <img className="h-12 lg:ml-0 md:ml-12 ml-12" src={logoImage} />
         </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -188,7 +191,9 @@ const Navbar = () => {
             <span className="bg-[#f96331] text-white badge badge-md  indicator-item">0</span>
           </div>
         </div>
+        <Link to='/login'>
         <a className="md:hover:bg-[#f96331] hover:text-white hidden  btn md:flex justify-center  rounded-none bg-transparent border-[#f96331]">Login</a>
+        </Link>
       </div>
     </div>
   );

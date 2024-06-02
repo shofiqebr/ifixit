@@ -79,7 +79,7 @@ const HowWorks = () => {
 
 
       <div className="lg:flex lg:justify-center lg:items-center lg:gap-28 xl:-mt-16 lg:-mt-8 flex lg:flex-row lg:px-[184px] flex-col gap-1 px-3 ">
-      <div className="card xl:w-60 xl:h-60  border-2 bg-base-100 shadow-xl xl:rotate-45 ">
+      <div className="card xl:w-60 xl:h-60  border-2 bg-base-100 shadow-xl xl:rotate-45 mt-1 ">
           <div className="card-body xl:-rotate-45  xl:relative flex justify-center items-center">
             <div className="xl:absolute xl:-top-6 border-2 border-[#f8d6ca] xl:left-[87px] w-16 h-16 rounded-full flex justify-center items-center bg-gradient-to-r from-[#FFE9E2] to-[#FFFDFD]">
               <img className="w-12 " src={howWorksImg} alt="" />
